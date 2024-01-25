@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [order-summary-component solution on Github](https://github.com/dkaffes/order-summary-component)
+- Live Site URL: [order-summary-component live site](https://dkaffes.github.io/order-summary-component/)
 
 ## My process
 
