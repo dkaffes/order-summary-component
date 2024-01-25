@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; as a percentage */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  background: no-repeat top/100% url(./images/pattern-background-desktop.svg),
+    hsl(225, 94%, 94%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.c-order-summary {
+  max-width: 40rem;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: 2rem;
+  box-shadow: 0 3rem 6rem hsl(225, 100%, 94%);
+}
+
+.c-order-summary__img-part {
+  margin-bottom: 2rem;
+}
+
+.c-order-summary__img-part img {
+  display: block;
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.c-order-summary__txt-part {
+  padding: 1.5rem;
+}
+
+.summary-title {
+  font-weight: 900;
+}
+
+.summary-text {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  padding: 2rem;
+}
+
+.annual-plan {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 15px;
+  background-color: hsl(225, 100%, 98%);
+  margin: 0 1.5rem 2rem 1.5rem;
+  padding: 1.5rem;
+}
+
+.annual-plan hgroup {
+  flex-grow: 2;
+  text-align: left;
+}
+
+.annual-plan-heading {
+  font-weight: 700;
+}
+
+.annual-plan-price {
+  color: hsl(224, 23%, 55%);
+}
+
+/* Button styling */
+
+.btn-change:link,
+.btn-change:visited {
+  font-weight: 700;
+  font-size: 1.4rem;
+  flex-grow: 1;
+}
+
+.btn-change:hover,
+.btn-change:active {
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+
+.btn-big {
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  margin: 1.5rem 1.5rem 2rem 1.5rem;
+  padding: 1.5rem;
+}
+
+.btn-proceed:link,
+.btn-proceed:visited {
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 15px;
+  box-shadow: 0 1.5rem 3rem hsla(224, 23%, 55%, 0.6);
+}
+
+.btn-proceed:hover,
+.btn-proceed:active {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.btn-cancel:link,
+.btn-cancel:visited {
+  color: hsl(224, 23%, 55%);
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.btn-cancel:hover,
+.btn-cancel:active {
+  color: #000;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 1.1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/**************************/
+/* MEDIA QUERIES */
+/* only for changing the mobile background pattern */
+/**************************/
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 768px  */
+@media (max-width: 48em) {
+  body {
+    background: no-repeat top/100% url(./images/pattern-background-mobile.svg),
+      hsl(225, 94%, 94%);
+  }
+}
